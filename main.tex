@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.375\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Theo}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Rode}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	% {\huge Web App Architect} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{San Francisco Bay Area}\\
+	\icon{Phone}{12}{+1 650 575 0625}\\
+	\icon{At}{12}{\href{mailto:theorodester@gmail.com}{theorodester@gmail.com}}\\	
+	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	% \icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	\icon{Github}{12}{\href{https://github.com/TheSharkhead2}{TheSharkhead2}}\\
+	
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/theorode/}{linkedin.com/in/theorode/}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I am a student enthusiastic about mathematics, computer science, and physics. I aim to understand computer programs at 
+	all levels and enjoy implementing features from scratch. I love exploring math education and enjoy teaching
+	concepts in any capacity. In everything I do, I aim to understand the world around me better: building
+	simulations of our world, finding intuitive ways to understand how our physical world works, and learning mathematical abstractions
+	to model anything I can. 
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Julia}{100}
+		\baritem{Python}{80}
+		\baritem{Rust}{35}
+		\baritem{JavaScript}{25}
+		\baritem{HTML + CSS}{35}
+		\baritem{LaTeX}{90}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{5/React Native, 6/Office, 5/git, 5/pandas, 4/TensorFlow, 5/Unreal}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Projects}
+
+\begin{entrylist}
+	\entry
+		{2021-2022}
+		{Writing and Teaching Math Curriculum}
+		{}
+		{Identified major issues with traditional middle/high school math education through numerous
+		interviews with a diverse group of teachers. Designed custom course curriculum with class notes typeset in LaTeX.
+		Organized and taught week-long calculus bootcamp for 9th graders using my custom curriculum. \\ 
+		\texttt{LaTeX}}
+	\entry
+		{late 2021}
+		{The Three Body Problem Simulation}
+		{}
+		{Built a simulation engine for the infamous Three Body problem. Collaborated with a group to 
+		improve accuracy and dependability of the simulation. Analyzed starting conditions and critical points
+		to develop an understanding of the problem.  \\
+		 \texttt{Python}\slashsep\texttt{PyGame}}
+	\entry
+		{early 2021}
+		{Music Recommendation Engine}
+		{}
+		{Built a machine learning model to predict likelihood of a user enjoying a specific song. 
+		Interfaced with the Spotify API to grab song data. Constructed small desktop application to
+		view currently playing Spotify song, rate how enjoyable the song is, and 
+		see model's prediction of likeability. \\ 
+		\texttt{Python}\slashsep\texttt{pandas}\slashsep\texttt{Tkinter}\slashsep\texttt{TensorFlow}}
+	\entry 
+		{2020}
+		{COVID-19 Data Analysis}
+		{}
+		{Cleaned and formatted COVID-19 case and death data. Crafted visual representations of the data. 
+		Analyzed the data using numerous predictive methods to determine likelihood of approaching peaks and
+		spikes.  \\ 
+		\texttt{Python}\slashsep\texttt{pandas}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2022-2026}
+		{Undergraduate Degree}
+		{Harvey Mudd College}
+		{Current freshman pursuing a degree in Computer Science and Math.}
+	\entry
+		{2018-2022}
+		{High School}
+		{The Nueva School}
+		{GPA: 3.91. Relavent coursework: Linear Algebra, Advanced Probability, Differential Equations, Quanutm Information and Computation, Advanced Mechanics, Algorithms, Computer Security, Computer Vision, Intro and Advanced Machine Learning, Multivariable Calculus, Graph Theory, Game Design, Modern Physics, Mobile App Design, Cryptocurrency, Computer Programming}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Skills}
+	
+	\textbf{Teamwork} - I frequently work in teams and I find the ability to exchange and challenge ideas paramount to success in any project. \\
+	\textbf{Teaching} - Whenever given the opportunity, I jump in to assist classmates or younger students with their classwork. I enjoy explaining anything from simple topics to advanced topics and always aim to have them fully understand what I am explaining. \\
+	\textbf{Leadership} - I can set goals easily and encourage my team to get to that goal efficiently and effectively. 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love playing tennis and skiing. I also enjoy sleight of hand magic and have organized a group of fellow magicians to perform at birthday parties.
+	And I can frequently be found solving puzzles, anything ranging from a rubik's cube to a 5000 piece floor puzzle.  
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	I have helped with servicing and repairing bikes to be donated to people in need.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
