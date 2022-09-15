@@ -52,8 +52,8 @@
 
 \geometry{
 	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=1.25cm, % Top margin
-	bottom=1.25cm, % Bottom margin
+	top=2cm, % Top margin
+	bottom=1.5cm, % Bottom margin
 	left=2cm, % Left margin
 	right=2cm, % Right margin
 	headheight=0.75cm, % Header height
@@ -171,11 +171,14 @@
 %----------------------------------------------------------------------------------------
 
 % Command to output section title headings
+% \newcommand{\cvsect}[1]{% The only parameter is the section text
+% 	\vspace{\baselineskip} % Whitespace before the section title
+% 	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
+% }
 \newcommand{\cvsect}[1]{% The only parameter is the section text
-	\vspace{\baselineskip} % Whitespace before the section title
-	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
+	\vspace{0.3cm} % Whitespace before the section title
+	\textcolor{black}{\Large{\textbf{#1}}}\\% Section title
 }
-
 %----------------------------------------------------------------------------------------
 %	ENTRY LIST
 %----------------------------------------------------------------------------------------
@@ -194,13 +197,13 @@
 }
 
 \newcommand{\entry}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
-	\parbox[t]{0.175\textwidth}{% 17.5% of the text width of the page
+	\parbox[t]{0.15\textwidth}{% 17.5% of the text width of the page
 		#1 % Leftmost entry date(s) text
 	}%
-	&\parbox[t]{0.825\textwidth}{% 82.5% of the text width of the page
+	&\parbox[t]{0.85\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
 		\hfill% Horizontal whitespace
-		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
+		{\footnotesize \textbf{\textcolor{black}{#3}}}% Right-aligned entry qualifier text
 		#4 % Entry description text
 	}\\\\}
 
