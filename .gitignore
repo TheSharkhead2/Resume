@@ -4,9 +4,9 @@ main.log
 main.out
 main.synctex.gz
 main.fdb_latexmk
-plain.aux
-plain.fls
-plain.log
-plain.out
-plain.synctex.gz
-plain.fdb_latexmk
+resume.aux
+resume.fls
+resume.log
+resume.out
+resume.synctex.gz
+resume.fdb_latexmk
