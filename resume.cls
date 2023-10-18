@@ -37,7 +37,7 @@
 \geometry{
     paper=a4paper, 
     top=1cm,
-    bottom=1.5cm,
+    bottom=1cm,
     left=1.5cm,
     right=1.5cm,
     % showframe,
@@ -67,7 +67,7 @@
 }
 
 \newcommand{\sectiontitle}[1]{
-    \vspace{0.2cm} % space above header 
+    \vspace{0.1cm} % space above header 
     \textcolor{black}{\Large{\textbf{#1}}}\\ % header title
     \noindent\makebox[\textwidth]{\rule{\textwidth}{0.2pt}}
 }
