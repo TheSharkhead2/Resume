@@ -36,8 +36,8 @@
 
 \geometry{
     paper=a4paper, 
-    top=1cm,
-    bottom=1cm,
+    top=1.5cm,
+    bottom=1.5cm,
     left=1.5cm,
     right=1.5cm,
     % showframe,
@@ -91,12 +91,29 @@
 
 }
 
+% \newcommand{\experience}[4]{ % title, date, company, description
+%     \parbox[t]{\textwidth}{
+%         {\textbf{#1}} % experience title
+%         \hfill % used to right align
+%         {\scriptsize \textbf{\textcolor{black}{#3}}}\\ % company name
+%         {\ssmall \textcolor{gray}{#2}} % date 
+%         #4
+%     }\\\\
+% }
+
 \newcommand{\experience}[4]{ % title, date, company, description
     \parbox[t]{\textwidth}{
-        {\textbf{#1}} % experience title
-        \hfill % used to right align
-        {\scriptsize \textbf{\textcolor{black}{#3}}}\\ % company name
-        {\ssmall \textcolor{gray}{#2}} % date 
+        {\textbf{#3} - {\textcolor{darkgray}{\textbf{#1}}}} % experience title
+        \hfill
+        {\small \textcolor{gray}{#2}} % date 
         #4
+    }\\\\
+}
+\newcommand{\experiencenocompany}[3]{ % title, date, description
+    \parbox[t]{\textwidth}{
+        {{{\textbf{#1}}}} % experience title
+        \hfill
+        {\small \textcolor{gray}{#2}} % date 
+        #3
     }\\\\
 }
