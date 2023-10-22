@@ -60,8 +60,8 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\namesection}[2]{ % take in name and then social stuff
-    \parbox[c][][t]{0.35\textwidth}{\textcolor{black}{\HUGE{\textbf{#1}}}} % make name really big
-    \parbox[c][][t]{0.64\textwidth}{\begin{flushright} % make social stuff flush right
+    \parbox[c][][t]{0.3\textwidth}{\textcolor{black}{\HUGE{\textbf{#1}}}} % make name really big
+    \parbox[c][][t]{0.7\textwidth}{\begin{flushright} % make social stuff flush right
          #2 
         \end{flushright}}
 }
