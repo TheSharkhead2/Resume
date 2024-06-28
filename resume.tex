@@ -3,100 +3,114 @@
 \usepackage{enumitem}
 
 \begin{document}
-    \namesection{Theo Rode}{\href{mailto:theorodester@gmail.com}{theorodester@gmail.com}  $\quad\bullet\quad$\href{https://www.theorode.com}{theorode.com} \\
+    \namesection{Theo Rode}{\href{mailto:theorodester@gmail.com}{theorodester@gmail.com} \\ %  $\quad\bullet\quad$\href{https://www.theorode.com}{theorode.com} \\
     \href{https://www.linkedin.com/in/theorode/}{linkedin.com/in/theorode} $\quad\bullet\quad$ \href{https://github.com/TheSharkhead2}{github.com/TheSharkhead2} }
     
-    \vspace{0.5cm}
+    \vspace{0.3cm}
 
     \sectiontitle{Work Experience}
     \begin{experiencelist}
+        \experience 
+            {Engineering Intern} 
+            {May 2024 - present}
+            {\href{https://autolab.berkeley.edu/}{UC Berkeley AUTOLab}}
+            {\begin{itemize}[noitemsep, topsep=1pt]
+                \item Investigating the applications of vision transformers and self-supervised methods for noisy label learning on large, real-world datasets.
+                \item Enhancing novel 3D-vision techniques for articulated object tracking from RGB video for one-shot robot imitation.
+            \end{itemize}}
         \experience
             {Scientific Data Analyst}
             {Nov 2023 - present}
-            {Caltech}
+            {\href{https://www.gps.caltech.edu/}{Caltech}}
             {\begin{itemize}[noitemsep, topsep=1pt]
-                \item Revamping ingestion of spectroscopy data from the TROPOMI satellite to extract global SIF (a photosynthesis proxy). 
-                \item Involves high-performance computing in Julia, applied linear algebra, and Linux server.
+                % \item Revamping ingestion of spectroscopy data from the TROPOMI satellite to extract global SIF (a photosynthesis proxy). 
+                % \item Involves high-performance computing in Julia, applied linear algebra, and Linux server.
+                \item Accelerating pipeline for processing 60+ GB of satellite data daily to extract fluorescence data accounting for less than 1\% of background spectrum.
+                \item Developing an expandable and modular codebase in Julia with multithreaded CPU or GPU-accelerated backbones. 
             \end{itemize}}
         \experience 
             {AI Robotics Software Development Intern}
             {Jun 2023 - Aug 2023}
-            {GrayMatter Robotics}
+            {\href{https://graymatter-robotics.com/}{GrayMatter Robotics}}
             {\begin{itemize}[noitemsep, topsep=1pt]
                 % \item Took lead on developing a novel RGB vision system using C++, OpenCV, ROS, and PCL.% for the Scan\&Sand product. 
-                \item Took lead on developing a novel RGB vision system in C++, utilizing OpenCV and PCL, which integrated with ROS.
+                \item Led development of a novel RGB vision system in C++, utilizing OpenCV and PCL, which integrated with ROS.
                 \item Developed algorithms for processing point clouds to allow for AI to perceive colored sections of objects as distinct.
                 \item Collaborated extensively with the hardware team to build new custom hardware.
                 \item Worked with the applications team to architect a custom calibration system to allow for interoperability between an external tracking system and a robotic arm for precise (mm scale) sanding.
             \end{itemize}}
-        \experience
-            {Data Structures \& Program Development (CSCI070) Teaching Assistant}
-            {Jan 2024 - present}
-            {Harvey Mudd College}
-            {\begin{itemize}[noitemsep, topsep=1pt]
-                \item Collaborating with professors and other teaching assistants to provide weekly office hours.
-            \end{itemize}}
+        % \experience
+        %     {Data Structures \& Program Development (CSCI070) Teaching Assistant}
+        %     {Jan 2024 - May 2024}
+        %     {Harvey Mudd College}
+        %     {\begin{itemize}[noitemsep, topsep=1pt]
+        %         \item Collaborated with professors to provide weekly office hours and give timely feedback on assignments.
+        %     \end{itemize}}
         \experience 
-            {Multivariable Calculus (MATH019) Teaching Assistant}
-            {Aug 2023 - Dec 2023}
-            {Harvey Mudd College}
+            {Teaching Assistant}
+            {Aug 2023 - May 2024}
+            {\href{https://www.hmc.edu/}{Harvey Mudd College}}
             {\begin{itemize}[noitemsep, topsep=1pt] 
+                \item Served as a teaching assistant for Multivariable Calculus (MATH019) and Data Structures (CSCI070) offering weekly office hours and thorough feedback on assignments.
                 \item Nominated by the head of the math department for a new role to write weekly exemplary solutions for the freshman multivariable calculus (MVC) class of over 200 students.
-                \item Collaborated with professors and other TAs to provide detailed feedback to students. 
+                % \item Collaborated with professors and other TAs to provide detailed feedback to students. 
             \end{itemize}}
-        \experience
-            {Homework Hotline Tutor}
-            {Sep 2022 - Dec 2023} 
-            {Harvey Mudd College}
-            {\begin{itemize}[noitemsep, topsep=1pt]
-                \item Provide homework help through a free call-in tutoring service for kids from elementary to high school.
-                % \item Communicate over phone or messaging, adapting my communication style to the situation.
-            \end{itemize}}
+        % \experience
+        %     {Homework Hotline Tutor}
+        %     {Sep 2022 - Dec 2023} 
+        %     {Harvey Mudd College}
+        %     {\begin{itemize}[noitemsep, topsep=1pt]
+        %         \item Provide homework help through a free call-in tutoring service for kids from elementary to high school.
+        %         % \item Communicate over phone or messaging, adapting my communication style to the situation.
+        %     \end{itemize}}
     \end{experiencelist}
     \vspace{-0.2cm}
     \sectiontitle{Projects}
     \begin{experiencelist}
         \experiencenocompany
             {\href{https://github.com/TheSharkhead2/nonlinear_dynamics_recovery}{Automated Recovery of Dynamical Systems}}
-            {Feb 2024 - present}
+            {Feb 2024 - May 2024}
             {\begin{itemize}[noitemsep, topsep=1pt] 
-                \item Explored machine learning techniques for automated nonlinear dynamics recovery from noisy data. 
-                \item Extended methods from modern research papers with active learning and robust parameter selection algorithms.
+                \item Explored machine learning techniques from modern research papers and implemented from-scratch codebase in Julia.
+                % \item Extended methods from modern a research paper with robust parameter selection algorithms and precision metrics. 
             \end{itemize}}
         \experiencenocompany
             {\href{https://github.com/TheSharkhead2/The_Game_of_Gradients}{The Game of Gradients}}
             {Nov 2022 - Jan 2023}
             {\begin{itemize}[noitemsep, topsep=1pt] 
-                \item Led a small team in creating a game in Rust that builds intuition for a gradient field.
-                \item Designed a real-time gradient field simulation that updates live with user defined functions. 
+                % \item Led a small team in creating a game in Rust that builds intuition for a gradient field.
+                % \item Designed a real-time gradient field simulation that updates live with user defined functions. 
                 % \item Showcased to high school MVC teacher who used it as a teaching tool for his class.
+                \item Led team in creating a math-education game in Rust with live, interactive gradient field rendering.
                 \item Currently being used by my high school MVC teacher as a teaching tool for his MVC class. 
             \end{itemize}}
         \experiencenocompany 
             {Shark Attack Data Analysis}
             {Nov 2022 - Dec 2022}
             {\begin{itemize}[noitemsep, topsep=1pt]
-                \item Formatted heavily inconsistent and non-standardized data on shark attacks.
-                \item Analyzed data to extract patterns and compiled visual representations to effectively articulate trends using Julia. 
+                \item Analyzed heavily inconsistent data and compiled visual representations to effectively articulate trends using Julia. 
+                % \item Formatted heavily inconsistent and non-standardized data on shark attacks.
+                % \item Analyzed data to extract patterns and compiled visual representations to effectively articulate trends using Julia. 
                 % \item Compiled visual demonstrations of the data to effectively articulate trends. 
             \end{itemize}}
         \experiencenocompany
             {\href{https://github.com/TheSharkhead2/spotify.rs}{Rust Spotfiy API Wrapper}}
             {Aug 2022 - present}
             {\begin{itemize}[noitemsep, topsep=1pt]
-                \item Developed an intuitive library structure as a wrapper for the Spotify Web API in Rust. 
-                % \item Implemented the PKCE extension for OAuth2 authorization with the API. 
-                % \item Constructed custom formatting algorithms for objects to improve usability of API.
-                \item Published as an open source library to Rust's Crates.io package marketplace.
+                % \item Developed an intuitive library structure as a wrapper for the Spotify Web API in Rust. 
+                % % \item Implemented the PKCE extension for OAuth2 authorization with the API. 
+                % % \item Constructed custom formatting algorithms for objects to improve usability of API.
+                % \item Published as an open source library to Rust's Crates.io package marketplace.
+                \item Published open source library on Rust's Crates.io for simplified and robust interaction with the Spotify API.
             \end{itemize}}
-        \experiencenocompany
-            {\href{https://github.com/TheSharkhead2/third_body_simulation}{Three Body Problem Simulation}}
-            {Nov 2021 - Dec 2021}
-            {\begin{itemize}[noitemsep, topsep=1pt]
-                \item Built a simulation engine for the Three Body problem, modeling the chaotic motion of three gravitational bodies. 
-                % \item Collaborated with a group to improve accuracy and dependability of the simulation.
-                % \item Utilized the simulation to gain intuition for the chaotic system's behavior.
-            \end{itemize}}
+        % \experiencenocompany
+        %     {\href{https://github.com/TheSharkhead2/third_body_simulation}{Three Body Problem Simulation}}
+        %     {Nov 2021 - Dec 2021}
+        %     {\begin{itemize}[noitemsep, topsep=1pt]
+        %         \item Built a simulation engine for the Three Body problem, modeling the chaotic motion of three gravitational bodies. 
+        %         % \item Collaborated with a group to improve accuracy and dependability of the simulation.
+        %         % \item Utilized the simulation to gain intuition for the chaotic system's behavior.
+        %     \end{itemize}}
         % \experiencenocompany
         %     {Music Recommendation Engine}
         %     {Jan 2021 - Apr 2021}
@@ -111,21 +125,22 @@
     \begin{experiencelist}
         \experiencenocompany 
             % {Undergraduate Degrees in Math and Computer Science}
-            {Harvey Mudd College}
+            {\href{https://www.hmc.edu/}{Harvey Mudd College}}
             {2022 - 2026}
             % {Harvey Mudd College}
             % {\begin{itemize}[noitemsep, topsep=1pt]
             %     \item[] {Current freshman pursuing a degree in Computer Science and Math. Current and completed coursework: MATH055, MATH173, PHYS024, BIOL046, BIOL023, HSA010, CSCI042, MATH019, CHEM042, CHEM023, WRIT001, PHYS023}
             % \end{itemize}}
             {\begin{itemize}[noitemsep, topsep=1pt]
-                \item {Sophomore pursuing degrees in Computer Science and Math. Current GPA: 3.97. }
-                \item {Current coursework: Dynamical Systems (MATH181), Abstract Algebra (MATH171), Probability \& Statistics (MATH062), Microeconomics (ECON052), Film Music (MUS067), STEM \& Social Impact: Climate Change (CORE079).}
-                \item {Notable past coursework: Data Structures \& Program Development (CSCI070), Mathematical Analysis (MATH131), Differential Equations (MATH082), Advanced Linear Algebra (MATH173), Discrete Math (MATH055), Principles \& Practice: Computer Science (CSCI042), Engineering Systems (ENGR079).}
+                \item {Rising junior pursuing degrees in Computer Science and Math. Major GPA: 4.0. Overall GPA: 3.98. }
+                % \item {Current coursework: }
+                \item {Notable past coursework: Data Structures \& Program Development (CSCI070), Dynamical Systems (MATH181), Abstract Algebra (MATH171), Probability \& Statistics (MATH062), Mathematical Analysis (MATH131), Differential Equations (MATH082), Advanced Linear Algebra (MATH173), Discrete Math (MATH055), Principles \& Practice: Computer Science (CSCI042), Engineering Systems (ENGR079).}
+                \item {Upcoming coursework: Computability and Logic (CSCI081), Computer Systems (CSCI105), Math Methods in Data Science (MATH177), Network Science (MATH189AI)}
             \end{itemize}}
             % {Current freshman pursuing a degree in Computer Science and Math. Current coursework: CS42 (Principles \& Practice: Comp Sci), MATH19 (Single \& Multivariable Calculus), CHEM42, WRIT1, PHYS23}
         \experiencenocompany
             % {High School}
-            {The Nueva High School}
+            {\href{https://www.nuevaschool.org/}{The Nueva High School}}
             {2018 - 2022}
             % {The Nueva School}
             {\begin{itemize}[noitemsep, topsep=1pt]
@@ -136,11 +151,15 @@
     \sectiontitle{Skills}
     \begin{itemize}[noitemsep, topsep=0pt]
         \item Programming languages: Rust, C++, Julia, Python, R, Racket, JavaScript, TypeScript, MATLAB, HTML, CSS
-        \item Tools and Platforms: OpenCV, PCL (Point Cloud Library), git, Linux, ROS (Robot Operating System), TensorFlow, Pandas, Svelte, Tauri, Leptos, Yew, Unreal Engine, Bevy, React Native
-        \item Skills in computer vision, data analytics, computer simulation, and machine learning.
-        \item Strong leadership, teaching, and teamwork skills
+        \item Tools and platforms: OpenCV, PCL (Point Cloud Library), PyTorch, ROS (Robot Operating System), git, Linux, Pandas, Leptos, Yew, Unreal Engine, Bevy, React Native
+        \item Technical skills: computer vision, data analytics, computer simulation, and machine learning.
+        \item Soft skills: leadership, teaching, and teamwork
     \end{itemize}
-    \vspace{0.4cm}
+    \vspace{0.2cm}
+    \sectiontitle{Awards}
+    \begin{itemize}[noitemsep, topsep=0pt]
+        \item \href{https://www.hmc.edu/mathematics/about/awards/#heading-accordion-item-sophomore}{\textbf{The Courtney S. Coleman Prize}}\textbf{, 2024}: Awarded by Harvey Mudd to rising junior students who excel in mathematics.
+    \end{itemize}
     % \begin{minipage}[t]{0.6\textwidth}
     %     \vspace{-\baselineskip} % Required for vertically aligning minipages
         
